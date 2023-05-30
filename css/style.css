@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+:root{
+    --cor-de-fundo: rgb(246, 246, 246)
+
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--cor-de-fundo);
+}
+
+
+/* HEADER */
+header{
+    margin-top: 0;
+    background-image: url(../img/Plantacao-soja-agricola-dia-ensolarad-tipos-de-lavoura.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-position: 40%;
+}
+
+/* COMEÇO DA NAVEGAÇÃO NO HEADER */
+nav ul{
+    margin-top: 0;
+    display: flex; 
+    flex-wrap: wrap;
+    flex-basis: none;
+    gap: 15px;
+    list-style:none;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.7);     
+}
+
+nav li{
+    padding: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    transition: 1s;
+}
+
+nav a:hover{
+    color: #53bd81 ;
+    border-bottom: 1px solid #53bd81;
+    padding-bottom: 0;
+}
+
+/* HEADER TITULO*/
+
+.h-titulo{
+    margin-top: 100px;
+    text-align: center;
+    
+    
+}
+
+.h-titulo h1{
+    text-shadow: 5px 4px 4px rgb(126, 126, 126);
+    margin-bottom: 0;
+    color: rgb(0, 0, 0);
+}
+
+.h-titulo p{
+    margin-top: 5px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-bottom: 1px solid white;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+     
+}
+/* COMEÇO DO CONTEUDO PRINCIPAL */
+main{
+    width: 80%;
+    margin: auto;
+    
+}
+/* CONFIGURAÇÃO GERAL DO H2 */
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+/* SEÇÃO PROBLEMAS */
+.problemas{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.problemas p{
+    width: auto;
+    text-align: justify;
+}
+/* TORNANDO O SITE RESPONSIVO*/
+@media (max-width:1200PX){
+    .problemas{
+        flex-direction: column;
+    }
+    .problemas img{
+        width: auto;
+    }
+
+    .main-conteudo{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+}   
+@media (max-width: 575px){
+    .h-titulo h1{
+        text-shadow: none;
+        color: white
+    }
+    .problemas{
+        flex-direction: column;
+    }
+    .problemas img{
+        width: auto;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
+/* CARDS OD CONTEUDO PRINCIPAL */
+.main-conteudo{
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    text-align: justify;   
+}
+/* CONFIGURAÇÃO GERAL DOS CARDS */
+#main-solucao, #main-publico, #main-beneficios{
+    border: 1px solid black;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    min-height: 500px;
+    text-align: center;
+    min-width: 33%;  
+}
+/* CONFIGURAÇÃO GERAL DOS PARAGRAFOS DO CARD */
+#main-solucao p, #main-publico p, #main-beneficios p{
+    text-align: justify;
+}
+/* CONFIGURAÇÃO GERAL DAS IMAGENS CARD */
+#main-solucao img, #main-publico img, #main-beneficios img{
+    width: 80%;
+    border-radius: 20px;
+    
+}
+/* FOOTER */
+footer{
+    background-color: rgb(29, 29, 32);
+    color: rgb(245, 233, 212);
+    display:flex;
+    font-size: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.fiap{
+    text-align: center;
+   
+}
